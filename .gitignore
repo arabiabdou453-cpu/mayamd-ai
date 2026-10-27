@@ -3,7 +3,5 @@ pages_raw/
 .chrome-profile*
 *.log
 original.html
-scripts/check_cred.js
-scripts/test_github_token.js
-scripts/check_repo_exists.js
-scripts/create_and_push.js
+scripts/
+screenshots/

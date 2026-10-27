@@ -1,0 +1,4 @@
+(function(){var st=document.createElement('style');st.textContent='section.mmx-band[aria-label="Going home"],section.mmx-band[aria-label="Care in their pocket"]{display:none!important}';document.head.appendChild(st);
+var CUT=['Patient-specific protocols determine the questions, the AI does the talking, and YOUR clinicians provide the right care at the right time.','Our clinical staff supports your clinicians and patients. Your clinicians provide the right care at the right time.'];
+function run(){[].forEach.call(document.querySelectorAll('[data-mm-root] p'),function(p){var t=p.textContent.replace(/\s+/g,' '),n=t;CUT.forEach(function(c){n=n.replace(c,'');});if(n!==t)p.textContent=n.replace(/\s{2,}/g,' ').trim();});}
+if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',run);else run();})();

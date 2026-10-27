@@ -1,0 +1,7 @@
+(function(){var C='.mmx-we{display:inline-flex;align-items:center;padding:7px 12px;margin-right:6px;border:1px solid rgba(169,155,255,.6);border-radius:999px;background:rgba(75,31,214,.16);color:#c9c1ff!important;font:500 12px/1 "IBM Plex Mono",monospace;letter-spacing:.06em;text-decoration:none!important;white-space:nowrap}.mmx-we:hover,.mmx-we[aria-current]{background:#4b1fd6;border-color:#a99bff;color:#fff!important}.mm-menu .mmx-we{align-self:flex-start;margin:16px 0 6px;padding:10px 16px;font-size:14px}@media(max-width:991px){header .mmx-we{display:none}}';
+function run(){var r=document.querySelector('[data-mm-root]');if(!r)return;if(!document.getElementById('mmx-we-css')){var s=document.createElement('style');s.id='mmx-we-css';s.textContent=C;document.head.appendChild(s);}
+var here=(location.pathname.replace(/\/$/,'')||'/')==='/whatelse';
+function mk(){var a=document.createElement('a');a.href='/whatelse';a.className='mmx-we';a.textContent='#WhatElse';if(here)a.setAttribute('aria-current','page');return a;}
+var acts=r.querySelector('header .mm-div-958509');if(acts&&!acts.querySelector('.mmx-we'))acts.insertBefore(mk(),acts.firstChild);
+document.querySelectorAll('.mm-menu').forEach(function(m){if(m.querySelector('.mmx-we'))return;var c=m.querySelector('.mm-cta');c?m.insertBefore(mk(),c):m.appendChild(mk());});}
+if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',run);else run();addEventListener('load',run);setTimeout(run,1500);})();

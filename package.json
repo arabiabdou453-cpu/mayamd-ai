@@ -1,0 +1,19 @@
+{
+  "name": "mayamd-ai-clone",
+  "version": "1.0.0",
+  "description": "Pixel-perfect 1:1 clone of https://mayamd.ai with zero errors and 100% fidelity",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "inspect": "node scripts/compare_sites.js",
+    "test:responsive": "node scripts/test_responsive.js"
+  },
+  "keywords": [
+    "mayamd",
+    "pixel-perfect",
+    "clone",
+    "healthcare-ai"
+  ],
+  "author": "",
+  "license": "ISC"
+}
